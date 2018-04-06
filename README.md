@@ -26,3 +26,5 @@ To run the test suite, simply enter the following command into the terminal:
 ```
 rspec
 ```
+
+(c) 2018 James Martinez. All rights reserved.
