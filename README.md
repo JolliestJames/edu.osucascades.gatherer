@@ -1,4 +1,4 @@
-# edu.osucascades.gatherer
+# Gatherer
 
 This application is a learning experience in test driven development. Clone the repo, and then:
 
