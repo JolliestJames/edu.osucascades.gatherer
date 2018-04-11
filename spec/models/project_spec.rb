@@ -33,7 +33,7 @@ describe "estimates" do
   it "can calculate total size" do
     expect(project.total_size).to eq(7)
   end
-  it "can calcualte remianing size" do
+  it "can calculate remianing size" do
     expect(project.total_size).to eq(5)
   end
 end
