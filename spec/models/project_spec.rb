@@ -22,7 +22,7 @@ RSpec.describe Project do
 end
 
 describe "estimates" do
-  let(:project) (Project.new)
+  let(:project) { (Project.new) }
   let(:done) { Task.new(size: 2, completed: true) }
   let(:small_not_done) { Task.new(size: 1) }
   let(:large_not_done) { Task.new(size: 4) }
