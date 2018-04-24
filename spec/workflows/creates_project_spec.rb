@@ -7,7 +7,7 @@ RSpec.describe CreatesProject do
   )}
 
   describe "initialization" do
-    let(:task_string) { "" })
+    let(:task_string) { "" }
     it "creates a project given a name" do
       creator = CreatesProject.new(name: "Project Runway")
       creator.build
@@ -51,19 +51,19 @@ RSpec.describe CreatesProject do
       let(:task_string) { "Start Things:" }
       specify { expect(tasks.size).to eq(1) }
       specify { expect(tasks.first).to have_attributes(
-        title "Start Things", size: 1
+        title: "Start Things", size: 1
       )} 
     end
 
     describe "handles a string with negative size" do
       let(:task_string) { "Start Things:-1" }
       specify { expect(tasks.size).to eq(1) }
-      specify { expect(tasks.first). to have_attributes(
-        title: "Start Things", size: 1)
+      specify { expect(tasks.first).to have_attributes(
+        title: "Start Things", size: 1
       )}
     end
 
-    decribe "with multiple tasks" do
+    describe "with multiple tasks" do
       let(:task_string) { "Start Things:3\nEnd Things:2" }
       specify { expect(tasks.size).to eq(2) }
       specify { expect(tasks).to match([
@@ -79,5 +79,5 @@ RSpec.describe CreatesProject do
       specify { expect(creator.project).not_to be_a_new_record }
     end
   end
-  
+
 end
