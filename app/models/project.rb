@@ -1,5 +1,6 @@
 class Project < ApplicationRecord
   has_many :tasks, dependent: :destroy
+  validates :name, presence: true
 
   def incomplete_tasks
     tasks.reject(&:complete?)
