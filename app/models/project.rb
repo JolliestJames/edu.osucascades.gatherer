@@ -11,9 +11,11 @@ class Project < ApplicationRecord
     incomplete_tasks.empty?
   end
 
-  def size
+  def total_size
     tasks.sum(&:size)
   end
+
+  alias_method :size, :total_size
 
   def remaining_size
     incomplete_tasks.sum(&:size)
