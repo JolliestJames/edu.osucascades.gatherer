@@ -22,6 +22,7 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem 'webdrivers', '~> 3.0'
   gem "rspec-rails", "~> 3.7.0"
+  gem "factory_bot_rails"
 end
 
 group :development do
