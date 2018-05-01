@@ -23,6 +23,7 @@ group :development, :test do
   gem 'webdrivers', '~> 3.0'
   gem "rspec-rails", "~> 3.7.0"
   gem "factory_bot_rails"
+  gem "database_cleaner"
 end
 
 group :development do
